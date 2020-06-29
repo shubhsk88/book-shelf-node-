@@ -2,13 +2,13 @@ const express = require('express');
 
 const router = express.Router();
 
-const author_controller = require('../controllers/authorConroller');
+const author_controller = require('../controllers/authorController');
 
-const book_controller = require('../controllers/bookConroller');
+const book_controller = require('../controllers/bookController');
 
-const genre_controller = require('../controllers/genreConroller');
+const genre_controller = require('../controllers/genreController');
 
-const bookinstance_controller = require('../controllers/bookInstanceConroller');
+const book_instance_controller = require('../controllers/bookInstanceController');
 const book = require('../models/book');
 
 // BOok routes
@@ -18,13 +18,13 @@ router.get('/books/create', book_controller.book_create_get);
 
 router.post('/books/create', book_controller.book_create_post);
 
-router.get('/books/:id/delete', book_controller.book_get_delete);
+router.get('/books/:id/delete', book_controller.book_delete_get);
 
-router.post('/books/:id/delete', book_controller.book_post_delete);
+router.post('/books/:id/delete', book_controller.book_delete_post);
 
-router.get('/books/:id/update', book_controller.book_get_update);
+router.get('/books/:id/update', book_controller.book_update_get);
 
-router.post('/books/:id/update', book_controller.book_post_update);
+router.post('/books/:id/update', book_controller.book_update_post);
 
 router.get('/book/:id', book_controller.book_detail);
 
