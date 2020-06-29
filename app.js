@@ -10,8 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 const mongoose = require('mongoose');
-const mongoDB =
-  'mongodb+srv://sgubp:pikachu88@cluster0-edkdj.azure.mongodb.net/local_library?retryWrites=true&w=majority';
+const mongoDB = process.env.APP_KEY;
 
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 
