@@ -11,7 +11,7 @@ var app = express();
 
 const mongoose = require('mongoose');
 const mongoDB =
-  'mongodb+srv://shubhsk:K0tSGKZD8E55GmnX@cluster0-edkdj.azure.mongodb.net/local_library?retryWrites=true&w=majority';
+  'mongodb+srv://sgubp:pikachu88@cluster0-edkdj.azure.mongodb.net/local_library?retryWrites=true&w=majority';
 
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 

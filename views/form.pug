@@ -1,0 +1,9 @@
+
+h1 Enter you Message and get it posted
+
+form(method='POST',action='/new')
+    label(for="text") Enter your Message:
+    input(type="text",name="messageText")
+    label(for="user") Enter your name:
+    input#user(type="text",name="author" )
+    input(type="submit") Submit
